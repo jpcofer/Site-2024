@@ -1,47 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="ICONE.ico" type="Aula-03/ICONE"
-    <title></title>
+    <!-- GOOGLE FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- FIM GOOGLE FOTES -->
+    <!-- BOOTSTRAO ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- FIM BOOTSTRAO ICONS -->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="menu.js" defer></script>
+
+    <title>Champions League</title>
 </head>
 <body>
-    <h1> JOGOS DA CHAMPIONS LEAGUE.</h1>
     
-    <p> Aqui está os próximos jogos da Champions League</p>
-    
-    <img src="Champions_League.png" alt="Champions" width="250px">
-    <img src="confrontos.png" alt="Confrontos" width="270px">
-    <img src="trofeu.webp" alt="Troféu" width="295px">
-    
-    
-        <li>Fevereiro/Março</li>
-        <a href="https://www.youtube.com/watch?v=lluXrjE1nHc" target="_blank">Primeira semana</a>
-    
-        <li>Oitavas jogos da ida terça-feira</li>
-        <a href="https://www.youtube.com/watch?v=Ew96_adktTQ" target="_blank">Segunda semana</a>
-    
-        <li>Oitavas jogos da ida quarta-feira</li>
-        <a href="https://www.youtube.com/watch?v=VIDHV4zXQoE" target="_blank">Terceira semana</a>
-        
-        <li>Oitavas jogos da volta terça-feira</li>
-        <a href="https://www.youtube.com/watch?v=NCUYg0Gly5k" target="_blank">Quarta semana</a>
-        
-        <li>Oitavas jogos da volta quarta-feira</li> 
-        
-  </ol>
-    <h2> PARA MAIS JOGOS ACESSE</h2>
-    <a href="https://www.uefa.com/uefachampionsleague/" target="_blank">Acesse o site da UEFA para ver os resultados</a>
+<header>
+    <div class="interface">
+     <div class="logo">
+        <a href="#">
+            <img src="Logo_UEFA_Champions_League.png" alt="Logo da Champions" width="100px">
+        </a>
+     </div><!--logo-->
 
-    <h2> PARA FICAR LIGADO DO QUE ESTA ACONTECENDO ACESSE</h2>
-    <a href="https://pt.uefa.com/" target="_blank"  download="COINI.pdf" type="aplication/pdf">
-       Para ficar dentro de tudo que esta acontecendo no futebol europeu.
-    </a>
-     <h2> PARA VER MEU REPOSITORIO</h2>
-    <a href="https://github.com/jpcofer/Site-2024" target="_blank"  download="COINI.pdf" type="aplication/pdf">
-       Clique Aqui.
-    
-    
+     <nav class="menu-desktop">
+           <ul>
+               <li><a href="#">Início</a></li>
+               <li><a href="https://gaming.uefa.com/en/uclpredictor/">Jogos</a></li>
+               <li><a href="https://en.wikipedia.org/wiki/UEFA_Champions_League">Sobre</a></li>
+               <li><a href="https://pt.uefa.com/uefachampionsleague/history/winners/">Campeões</a></li>
+           </ul>
+     </nav>
+
+     <div class="btn-contato">
+        <a href="https://www.uefa.com/uefachampionsleague/">
+            <button>Contato</button>
+        </a>
+     </div><!--btn-contato-->
+
+     <div class="btn-abrir" id="btn-menu">
+        <i class="bi bi-list"></i>
+     </div><!--btn-abrir-menu-->
+
+     <div class="menu-mobile" id="menu-mobile">
+        <div class="btn-fechar">
+            <i class="bi bi-x-lg"></i>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="https://gaming.uefa.com/en/uclpredictor/">Jogos</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/UEFA_Champions_League">Sobre</a></li>
+                <li><a href="https://pt.uefa.com/uefachampionsleague/history/winners/">Campeões</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+      </nav>
+
+     </div><!--menu-mobile-->
+     <div class="overlay-menu" id="overlay-menu"></div>
+    </div><!--interface-->
+</header>
+
+<main>
+    <section class="topo-do-site">
+        <div class="interface">
+            <div class="flex">
+                <div class="txt-topo-site">
+                    <h1>CHAMPIONS LEAGUE<span>.</span></h1>
+                    <p>Fique ligado de tudo que esta acontecendo na maior competição 
+                        de futebol do Mundo.</p>
+
+                        <div class="btn-contato">
+                            <a href="https://www.uefa.com/uefachampionsleague/"><button>Se liga</button>
+                            </a>
+                        </div>
+                </div><!--txt-topo-site-->
+
+                <div class="img-topo-site">
+                    <img src="Design sem nome.png" alt="" width="500px">
+                </div><!--img-topo-site-->
+            </div><!--flex-->
+        </div><!--interface-->
+    </section><!--topo-do-site-->
+
+    <section class="fases">
+        <div class="interface">
+            <h2 class="titulo">FASES <span>ATUAIS.</span></h2>
+            <div class="flex">
+                <div class="fases-box">
+                    <i class="bi bi-8-circle"></i>
+                    <h3>Oitavas</h3>
+                    <p>Manchester City X Copenhaga, Real Madrid X Leipzig,
+                       Bayern de Munique X Lazio, PSG X Real Sociedad,
+                       Inter X Atlético de Madrid, PSV X Borussia,
+                       Porto X Arsenal, Napoli X Barcelona.  
+                    </p>
+                </div><!--fases-box-->
+                
+                <div class="fases-box">
+                    <i class="bi bi-4-circle"></i>
+                    <h3>Quartas</h3>
+                    <p>Barcelona X PSG, Borussia X Atlético de Madrid,
+                       Bayern de Munique X Arsenal, Manchester City X Real Madrid 
+                    </p>
+                </div><!--fases-box-->
+
+                <div class="fases-box">
+                    <i class="bi bi-2-circle"></i>
+                    <h3>Semis</h3>
+                    <p>Tudo que aconteceu ou que vai acontecer nas semis de final
+                        da Champions League.</p>
+                </div><!--fases-box-->
+            </div><!--flex-->
+        </div><!--interface-->
+    </section><!--fases-->
+
+    <section class="sobre">
+        <div class="interface">
+            <div class="flex">
+                
+                <div class="img-sobre">
+                    <img src="foto-champions-png.jpeg" alt="" width="350">
+                </div><!--img-sobre-->
+
+                <div class="txt-sobre">
+                    <h2>INFORMAÇÕES <span>CHAMPIONS LEAGUE.</span></h2>
+                    <p>A Liga dos Campeões da UEFA é uma competição anual de futebol 
+                       em nível continental, organizada pela União das Associações 
+                       Europeias de Futebol e disputada por clubes da Europa.</p>
+                       <p>A Liga dos Campeões da UEFA de 2023-24 é a 69ª edição da 
+                          Liga dos Campeões da UEFA, a maior competição de clubes 
+                          europeus organizada pela UEFA. A final será disputada no 
+                          Estádio de Wembley, em Londres na Inglaterra.</p>
+                          <div class="btn-social">
+                            <a href="https://www.instagram.com/championsleague/"><button><i class="bi bi-instagram"></i></button></a>
+                            <a href="https://www.youtube.com/@UEFA"><button><i class="bi bi-youtube"></i></button></a>
+                            <a href="https://twitter.com/ChampionsLeague"><button><i class="bi bi-twitter"></i></button></a>
+                          </div><!--btn-social-->
+                </div><!--txt-sobre-->
+            </div><!--flex-->
+        </div>
+    </section><!--sobre-->
+</main>
+
+<footer>
+    <div class="interface">
+        <div class="line-footer">
+            <div class="flex">
+                <div class="logo-footer">
+                    <img src="Logo_UEFA_Champions_League.png" alt="" width="100px">
+                </div><!--logo-footer-->
+                <div class="btn-social">
+                    <a href="https://www.instagram.com/championsleague/"><button><i class="bi bi-instagram"></i></button></a>
+                    <a href="https://www.youtube.com/@UEFA"><button><i class="bi bi-youtube"></i></button></a>
+                    <a href="https://twitter.com/ChampionsLeague"><button><i class="bi bi-twitter"></i></button></a>
+                </div><!--btn-social-->
+            </div>
+        </div><!--line-footer-->
+
+        <div class="line-footer borda">
+            <p><i class="bi bi-envelope-fill"></i> <a href="mailto:jpcostafer@gmail.com">jpcostafer@gmail.com</a></p>
+        </div><!--line-footer-->
+    </div><!--interface-->
+</footer>
+ 
 </body>
 </html>
