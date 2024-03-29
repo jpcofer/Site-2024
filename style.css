@@ -285,7 +285,7 @@ footer .line-footer p a{
     color: #fff;
 }
 
-@media screen and (max-width: 918px) {
+@media screen and (max-width: 1100px) {
     /* CLASSES GERAIS */
     .flex{
         flex-direction: column;
