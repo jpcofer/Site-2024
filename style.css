@@ -62,7 +62,7 @@ header > .interface{
 }
 
 header a{
-    color: ##CCCCCC;
+    color: #CCCCCC;
     text-decoration: none;
     display: inline-block;
     transition: .2s;
